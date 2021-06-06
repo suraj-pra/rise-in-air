@@ -1,2 +1,2 @@
 # rise-in-air
-Summer Project
+Summer Project Game Development
