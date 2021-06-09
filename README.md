@@ -1,6 +1,6 @@
-Rise In Air--
-Team 4__
-Team Members :__
+Rise In Air\
+Team 4\
+Team Members :\
 Divyansh Garg\n
 Kartik Jhanwar\n
 Adhiraj Sinha\n
