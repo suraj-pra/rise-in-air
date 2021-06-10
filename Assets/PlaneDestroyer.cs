@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PlaneDestroyer : MonoBehaviour
 {
-
     // Start is called before the first frame update
-    void OnCollisionEnter(Collision collision)
+    void Start()
     {
-        if (collision.SpawnObstacles.tag.equals("PlaneDestroyer"))
-        {
-            Destroy(collision.SpawnObstacles);
-        }
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
