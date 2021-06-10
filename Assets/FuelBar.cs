@@ -13,7 +13,7 @@ public class FuelBar : MonoBehaviour
 
     void start()
     {
-        slider.maxValue = fuelCapacity.fuel;
+        slider.maxValue = fuelCapacity.max_fuel;
         slider.value = fuelCapacity.fuel;
 
         fill.color = gradient.Evaluate(1f);
