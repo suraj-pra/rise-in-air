@@ -262,7 +262,6 @@ GameObject:
   - component: {fileID: 5153622966858779025}
   - component: {fileID: 9178567059916858837}
   - component: {fileID: 890712358629988144}
-  - component: {fileID: 1215369128862921795}
   m_Layer: 0
   m_Name: Air_Balloon
   m_TagString: Untagged
@@ -343,17 +342,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementRatio: 10
---- !u!114 &1215369128862921795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6087437158880767250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c98bea576ad8249953e9a0ff552f5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuel: 0
-  reductionRatio: 0
