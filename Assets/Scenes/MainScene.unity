@@ -928,6 +928,7 @@ GameObject:
   - component: {fileID: 1533465711}
   - component: {fileID: 1533465710}
   - component: {fileID: 1533465714}
+  - component: {fileID: 1533465715}
   m_Layer: 0
   m_Name: PlaneDestroyer
   m_TagString: Untagged
@@ -1028,6 +1029,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1533465715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533465709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f301c1b9ebdb0647a166a482590695d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1553519841
 GameObject:
   m_ObjectHideFlags: 0
