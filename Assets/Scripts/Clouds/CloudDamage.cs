@@ -14,6 +14,7 @@ public class CloudDamage : MonoBehaviour
     {
         if (collider.gameObject.name == "Air_Balloon")
         {
+            // fuelCapacity.ReductionCloud(20f);
             fuelCapacity.reductionRatio = 3.5f;
         }
     }

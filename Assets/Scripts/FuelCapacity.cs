@@ -28,11 +28,11 @@ public class FuelCapacity : MonoBehaviour
         Application.Quit();
     }
 
-    void ReductionCloud(float cloudReduction) {
+    public void ReductionCloud(float cloudReduction) {
         fuel = (fuel - cloudReduction) % 100;
     }
 
-    void FuelCollection(float increment) {
+    public void FuelCollection(float increment) {
         fuel = (fuel + increment) % 100;
     }
 }
