@@ -5,11 +5,12 @@ using UnityEngine;
 public class FuelCapacity : MonoBehaviour
 {
     public float fuel;
+    public float max_fuel = 100f;
     public float reductionRatio;
     // Start is called before the first frame update
     void Start()
     {
-        fuel = 100f;
+        fuel = max_fuel;
         reductionRatio = 2f;
     }
 
@@ -27,11 +28,11 @@ public class FuelCapacity : MonoBehaviour
         Application.Quit();
     }
 
-    void ReductionCloud(float cloudReduction) {
+    public void ReductionCloud(float cloudReduction) {
         fuel = (fuel - cloudReduction) % 100;
     }
 
-    void FuelCollection(float increment) {
+    public void FuelCollection(float increment) {
         fuel = (fuel + increment) % 100;
     }
 }
