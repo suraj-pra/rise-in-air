@@ -407,6 +407,7 @@ GameObject:
   - component: {fileID: 812830736}
   - component: {fileID: 812830738}
   - component: {fileID: 812830737}
+  - component: {fileID: 812830739}
   m_Layer: 5
   m_Name: Fuel bar
   m_TagString: Untagged
@@ -445,41 +446,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 812830735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c9ea12ca08dd4f4e94a457f11c709e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 74c98bea576ad8249953e9a0ff552f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 812830738}
-  gradient:
-    serializedVersion: 2
-    key0: {r: 0.9433962, g: 0.06674972, b: 0.06674972, a: 1}
-    key1: {r: 0.049439307, g: 0.9528302, b: 0.09116717, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 23901
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  fill: {fileID: 1553519843}
-  fuelCapacity: {fileID: 1374376043}
+  fuel: 0
+  max_fuel: 100
+  reductionRatio: 0
 --- !u!114 &812830738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,6 +503,50 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &812830739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812830735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4262a04181405463b900dce92c4f2b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 812830738}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.5283019, g: 0, b: 0, a: 1}
+    key1: {r: 0.38315228, g: 0.8679245, b: 0.093342766, a: 1}
+    key2: {r: 0.38315228, g: 0.8679245, b: 0.093342766, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 22166
+    ctime1: 28142
+    ctime2: 33346
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
+  fill: {fileID: 1553519843}
+  fuelCapacity: {fileID: 812830737}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,17 +766,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1374376043 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1215369128862921795, guid: f67f8e959f10a904db3a1854ad56aa49, type: 3}
-  m_PrefabInstance: {fileID: 6792333925055960716}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c98bea576ad8249953e9a0ff552f5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1442999279
 GameObject:
   m_ObjectHideFlags: 0
