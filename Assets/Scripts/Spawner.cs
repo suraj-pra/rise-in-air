@@ -10,18 +10,18 @@ public class Spawner : MonoBehaviour
     public GameObject spawnee4;
     public GameObject spawnee5;
     public bool stopSpawning = false;
-    public float spawnTime;
-    public float spawnDelay;
-    
+    public float startTime;
+    public float spawnGap;
+
     void Start()
     {
-        InvokeRepeating("SpawnObject", spawnTime, spawnDelay);        
+        InvokeRepeating("SpawnObject", startTime, spawnGap);        
     }
 
     public void SpawnObject()
     {
-        int num = Random.Next(1, 6);
-        if(num == 1)
+        int num = Random.Range(1, 6);
+        if (num == 1)
         {
             Instantiate(spawnee1, transform.position, transform.rotation);
         }
@@ -31,15 +31,15 @@ public class Spawner : MonoBehaviour
         }
         else if (num == 3)
         {
-            Instantiate(spawnee2, transform.position, transform.rotation);
+            Instantiate(spawnee3, transform.position, transform.rotation);
         }
         else if (num == 4)
         {
-            Instantiate(spawnee2, transform.position, transform.rotation);
+            Instantiate(spawnee4, transform.position, transform.rotation);
         }
         else
         {
-            Instantiate(spawnee2, transform.position, transform.rotation);
+            Instantiate(spawnee5, transform.position, transform.rotation);
         }
         if (stopSpawning)
         {
