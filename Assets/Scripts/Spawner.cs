@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject spawnee1;
-    public GameObject spawnee2;
-    public GameObject spawnee3;
-    public GameObject spawnee4;
-    public GameObject spawnee5;
+    public GameObject [] spawnee = new GameObject[5];
     public bool stopSpawning = false;
-    public float spawnTime;
-    public float spawnDelay;
+    public float spawnTime = 10f;
+    public float spawnDelay = 0.5f;
     
     void Start()
     {
@@ -20,27 +16,9 @@ public class Spawner : MonoBehaviour
 
     public void SpawnObject()
     {
-        int num = Random.Next(1, 6);
-        if(num == 1)
-        {
-            Instantiate(spawnee1, transform.position, transform.rotation);
-        }
-        else if(num == 2)
-        {
-            Instantiate(spawnee2, transform.position, transform.rotation);
-        }
-        else if (num == 3)
-        {
-            Instantiate(spawnee2, transform.position, transform.rotation);
-        }
-        else if (num == 4)
-        {
-            Instantiate(spawnee2, transform.position, transform.rotation);
-        }
-        else
-        {
-            Instantiate(spawnee2, transform.position, transform.rotation);
-        }
+        System.Random random = new System.Random();
+        int num = random.Next(1, 6);
+        Instantiate(spawnee[num], transform.position, transform.rotation);
         if (stopSpawning)
         {
             CancelInvoke("SpawnObject");
