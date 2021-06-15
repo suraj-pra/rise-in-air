@@ -4,26 +4,9 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
-    public float life = 50f;
-
-    void Update()
-    {
-        if(this.transform.position.z <= -10)
-        {
-            Destruct();
-        }
-
-        void OnCollisionEnter(Collision boom)
-        {
-            if(boom.gameObject.name == "Air_Balloon")
-            {
-                Destruct();
-            }
-        }        
-    }
-
-    void Destruct()
+    void OnCollisionEnter(Collision coll)
     {
         Destroy(this.gameObject);
     }
+    
 }
