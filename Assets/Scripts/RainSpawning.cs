@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class RainSpawning : MonoBehaviour
 {
-    public GameObject [] spawnee;
-    public bool stopSpawning = false;
-    public float spawnTime = 10f;
-    public float spawnDelay = 10f;
-    
+    public GameObject [] rainFormat;
+    bool stopSpawning = false;
+    float spawnTime = 1f;
+    float spawnDelay = 0.1f;
     void Start()
     {
         InvokeRepeating("SpawnObject", spawnTime, spawnDelay);        
@@ -17,8 +16,8 @@ public class Spawner : MonoBehaviour
     public void SpawnObject()
     {
         System.Random random = new System.Random();
-        int num = random.Next(0, spawnee.Length);
-        Instantiate(spawnee[num], transform.position, transform.rotation);
+        int num = random.Next(0, 2);
+        Instantiate(rainFormat[num], transform.position, transform.rotation);
         if (stopSpawning)
         {
             CancelInvoke("SpawnObject");
