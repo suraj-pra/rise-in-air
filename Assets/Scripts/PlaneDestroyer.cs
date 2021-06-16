@@ -5,10 +5,9 @@ using UnityEngine;
 public class PlaneDestroyer : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collider)
         {
-            Destroy(collision.gameObject);
+            Destroy(collider.gameObject);
         }
     
 }
