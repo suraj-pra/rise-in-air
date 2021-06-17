@@ -319,8 +319,8 @@ MonoBehaviour:
   spawnee:
   - {fileID: 0}
   stopSpawning: 0
-  spawnTime: 10
-  spawnDelay: 10
+  startTime: 10
+  spawnGap: 10
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,12 +6,12 @@ public class Spawner : MonoBehaviour
 {
     public GameObject [] spawnee;
     public bool stopSpawning = false;
-    public float spawnTime = 10f;
-    public float spawnDelay = 10f;
+    public float startTime = 10f;
+    public float spawnGap = 10f;
     
     void Start()
     {
-        InvokeRepeating("SpawnObject", spawnTime, spawnDelay);        
+        InvokeRepeating("SpawnObject", startTime, spawnGap);        
     }
 
     public void SpawnObject()
