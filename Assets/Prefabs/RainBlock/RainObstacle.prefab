@@ -94,6 +94,7 @@ MonoBehaviour:
   umbrellaPaths:
   - {fileID: 3523214806384946020, guid: 353c1b55ed52ec44693db22eba6ebd96, type: 3}
   - {fileID: 6712509036855055155, guid: 24a753aea6127ff40b31f6f5f63eedd3, type: 3}
+  start: {fileID: 1815744348534550143, guid: 9710bc0cdf2dc6c47a000691da2af61d, type: 3}
 --- !u!114 &7429026243751562703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,5 +107,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b458fbecbf87b5b489b0937d3c29dd32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rainTime: 5
+  rainTime: 10
   endMarker: {fileID: 4966589062143178245, guid: 385d758003e6a394494bac70fde222e3, type: 3}

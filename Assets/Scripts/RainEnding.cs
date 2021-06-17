@@ -13,7 +13,7 @@ public class RainEnding : MonoBehaviour
         if(rainTime <= 0 && !endingDone){
             GameObject spawner = this.transform.GetChild(0).gameObject;
             Destroy(spawner);
-            GameObject clone = Instantiate(endMarker, this.transform, false);
+            Instantiate(endMarker, this.transform, false);
             endingDone = true;
         }
         else{
