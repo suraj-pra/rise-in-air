@@ -55,6 +55,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2086370381164740002}
+  - component: {fileID: -6586093033638779315}
+  - component: {fileID: 7429026243751562703}
   m_Layer: 0
   m_Name: RainObstacle
   m_TagString: Untagged
@@ -77,3 +79,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6586093033638779315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086370381164740001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f4fd0b501945b40ace61bf8ee84c7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  umbrellaPaths:
+  - {fileID: 3523214806384946020, guid: 353c1b55ed52ec44693db22eba6ebd96, type: 3}
+  - {fileID: 6712509036855055155, guid: 24a753aea6127ff40b31f6f5f63eedd3, type: 3}
+--- !u!114 &7429026243751562703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086370381164740001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b458fbecbf87b5b489b0937d3c29dd32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rainTime: 5
+  endMarker: {fileID: 4966589062143178245, guid: 385d758003e6a394494bac70fde222e3, type: 3}
