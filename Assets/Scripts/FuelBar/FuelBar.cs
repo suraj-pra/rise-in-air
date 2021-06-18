@@ -19,7 +19,7 @@ public class FuelBar : MonoBehaviour
         fill.color = gradient.Evaluate(1f);
     }
 
-    void FixedUpdate()
+    void Update()
     {
         slider.value = fuelCapacity.fuel;
 

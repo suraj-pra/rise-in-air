@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7897539665945588692}
   - component: {fileID: 6800660992747044742}
   - component: {fileID: 8567216774151449329}
+  - component: {fileID: -3497586929438527606}
   m_Layer: 0
   m_Name: RainEndMarker
   m_TagString: Untagged
@@ -56,3 +57,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b41e9a23e136f54d8dda41c44cf6b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3497586929438527606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4966589062143178245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41f0fe98b0f4a34482b349c5e2aec80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 0}
+  spawnScript: {fileID: 0}
