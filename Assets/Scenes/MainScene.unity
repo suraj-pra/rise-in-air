@@ -318,9 +318,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnee:
   - {fileID: 4711923888791582013, guid: 78bad6590358405409e60e0e29f08383, type: 3}
+  - {fileID: 7424018149015065284, guid: 3a043aa80e9a2ed9b95940594eb0c823, type: 3}
+  - {fileID: 6581429722328319847, guid: 57cb3b69d03f4b96ba38339d8e4c98f5, type: 3}
+  - {fileID: 6803981181357761609, guid: a3bd64ad1efb2e9f29517f813bbaa428, type: 3}
+  - {fileID: 7862036844786134714, guid: 34da2aff99279b5889489d039765f668, type: 3}
+  - {fileID: 6633209779967767613, guid: 2e191ccbfdf8d5968b1cb01455c161c9, type: 3}
+  - {fileID: 3164295173177356045, guid: b21ac4150bfea8bfea7a6de3b7a22426, type: 3}
+  - {fileID: 4546179908256554780, guid: bbeba150cf76ae14d83ff877ca993b14, type: 3}
+  - {fileID: 2086370381164740001, guid: 341bb5b63bf11814d83f74f5562f8e18, type: 3}
   stopSpawning: 0
-  startTime: 1
-  spawnGap: 10000
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
