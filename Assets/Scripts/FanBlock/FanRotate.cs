@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fanrotate : MonoBehaviour
+public class FanRotate : MonoBehaviour
 {
     
     // Update is called once per frame
