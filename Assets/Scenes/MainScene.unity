@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnee:
-  - {fileID: 2086370381164740001, guid: 341bb5b63bf11814d83f74f5562f8e18, type: 3}
+  - {fileID: 4711923888791582013, guid: 78bad6590358405409e60e0e29f08383, type: 3}
   stopSpawning: 0
   startTime: 1
   spawnGap: 10000
