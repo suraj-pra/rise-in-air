@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &8708158079684180416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141266118604227995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2843230848fda85428255ba8f0aa8c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &2770844044925761073
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +23,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6493816771241584286}
   - component: {fileID: -7600731919107206783}
-  - component: {fileID: -5181043614783213960}
   m_Layer: 0
   m_Name: SeaplaneLeftBlock
   m_TagString: Untagged
@@ -47,19 +59,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9952c38dd41f9a440b9e8203d9e73731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-5181043614783213960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2770844044925761073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2843230848fda85428255ba8f0aa8c7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!1001 &2099296144041377848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -179,6 +178,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd1c3a013b206e949bcd5989d80433aa, type: 3}
+--- !u!1 &2141266118604227995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6596356055263032764, guid: bd1c3a013b206e949bcd5989d80433aa, type: 3}
+  m_PrefabInstance: {fileID: 5061404771488837671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6879104355833988649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1822484659521254926, guid: bd1c3a013b206e949bcd5989d80433aa, type: 3}
