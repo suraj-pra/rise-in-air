@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class RainEndMarkerDownward : MonoBehaviour
 {
-    float speed = 5f;
+    Variables variable;
+    float speed;
     // Transform location;
     Vector3 down = new Vector3(0,0,-1);
-    // void Start(){
-    //     location = GetComponent<Transform>();
-    // }
-    // // Start is called before the first frame update
+    void Start(){
+        variable = GameObject.Find("Variables").GetComponent<Variables>();
+        speed = variable.getSpeed();
+    }
 
-    // // Update is called once per frame
     void Update()
     {
         transform.Translate(speed * Time.deltaTime * down);
