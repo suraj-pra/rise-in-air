@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class RainDownward : MonoBehaviour
 {
-    float speed = 5f;
+    Variables variable;
+    float speed;
     public Rigidbody rb;
     void Start()
     {
+        variable = GameObject.Find("Variables").GetComponent<Variables>();
+        speed = variable.getSpeed();
         // rb = GetComponent<Rigidbody>();
         rb.AddForce(0,0, -speed, ForceMode.VelocityChange);
     }
