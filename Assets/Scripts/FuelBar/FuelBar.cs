@@ -9,10 +9,13 @@ public class FuelBar : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image fill;
-    public FuelCapacity fuelCapacity;
+    private FuelCapacity fuelCapacity;
+    public GameObject player;
 
-    void start()
+    void Start()
     {
+        fuelCapacity = player.GetComponent<FuelCapacity>();
+
         slider.maxValue = fuelCapacity.max_fuel;
         slider.value = fuelCapacity.fuel;
 
