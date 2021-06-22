@@ -14,7 +14,7 @@ public class EndMarkerSpawning : MonoBehaviour
     }
     void Update()
     {
-        if(transform.position.z <= 11 && !nextSpawn) {
+        if(transform.position.z <= 9 && !nextSpawn) {
             spawnScript.SpawnObject();
             nextSpawn = true;
         }
