@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667555, g: 0.4842717, b: 0.56452394, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -318,9 +318,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnee:
   - {fileID: 4711923888791582013, guid: 78bad6590358405409e60e0e29f08383, type: 3}
+  - {fileID: 7424018149015065284, guid: 3a043aa80e9a2ed9b95940594eb0c823, type: 3}
+  - {fileID: 6581429722328319847, guid: 57cb3b69d03f4b96ba38339d8e4c98f5, type: 3}
+  - {fileID: 6803981181357761609, guid: a3bd64ad1efb2e9f29517f813bbaa428, type: 3}
+  - {fileID: 7862036844786134714, guid: 34da2aff99279b5889489d039765f668, type: 3}
+  - {fileID: 6633209779967767613, guid: 2e191ccbfdf8d5968b1cb01455c161c9, type: 3}
+  - {fileID: 3164295173177356045, guid: b21ac4150bfea8bfea7a6de3b7a22426, type: 3}
+  - {fileID: 4546179908256554780, guid: bbeba150cf76ae14d83ff877ca993b14, type: 3}
   stopSpawning: 0
-  startTime: 1
-  spawnGap: 10000
+--- !u!1 &497538934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 497538936}
+  - component: {fileID: 497538935}
+  m_Layer: 0
+  m_Name: FuelCanSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &497538935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497538934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50613b4674f0bda8899045ada9d06b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuelCan: {fileID: 7930793561579737381, guid: e8f67d052c1367d78ad26df16d13bf73, type: 3}
+  stopSpawning: 0
+  minTime: 5
+  maxTime: 8
+--- !u!4 &497538936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497538934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: 17.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +616,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 1553519843}
-  fuelCapacity: {fileID: 812830737}
+  fuelCapacity: {fileID: 1810721551}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1290,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6087437158880767250, guid: f67f8e959f10a904db3a1854ad56aa49, type: 3}
   m_PrefabInstance: {fileID: 6792333925055960716}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1810721551 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1215369128862921795, guid: f67f8e959f10a904db3a1854ad56aa49, type: 3}
+  m_PrefabInstance: {fileID: 6792333925055960716}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810721550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c98bea576ad8249953e9a0ff552f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1810721557
 MonoBehaviour:
   m_ObjectHideFlags: 0

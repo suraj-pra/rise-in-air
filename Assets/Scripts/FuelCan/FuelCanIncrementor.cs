@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CloudDamage : MonoBehaviour
+public class FuelCanIncrementor : MonoBehaviour
 {
     private FuelCapacity fuelCapacity;
     private bool hasEntered;
@@ -19,20 +19,14 @@ public class CloudDamage : MonoBehaviour
         {
             if (collider.gameObject.name == "Air_Balloon")
             {
-                Debug.Log("Before Reduction: " + fuelCapacity.fuel.ToString());
-                // fuelCapacity.ReductionCloud(20f);
-                fuelCapacity.ReductionCloud(10f);
-                Debug.Log("After Reduction: " + fuelCapacity.fuel.ToString());
+                Debug.Log("Before Increment: " + fuelCapacity.fuel.ToString());
+                fuelCapacity.FuelCollection(20f);
+                // fuelCapacity.FuelCollection(10f);
+                Debug.Log("After Increment: " + fuelCapacity.fuel.ToString());
+                Destroy(this.gameObject, 0.1f);
             }
-            
+
             hasEntered = true;
         }
     }
-    // private void OnTriggerExit(Collider collider)
-    // {
-    //     if (collider.gameObject.name == "Air_Balloon")
-    //     {
-    //         fuelCapacity.reductionRatio = 2f;
-    //     }
-    // }
 }

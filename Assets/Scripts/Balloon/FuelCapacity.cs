@@ -17,8 +17,8 @@ public class FuelCapacity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        fuel-= (Time.deltaTime * reductionRatio) % 100;
-        if(fuel == 0){
+        fuel -= (Time.deltaTime * reductionRatio) % 100;
+        if(fuel <= 0){
             terminate();
         }
     }
@@ -29,10 +29,10 @@ public class FuelCapacity : MonoBehaviour
     }
 
     public void ReductionCloud(float cloudReduction) {
-        fuel = (fuel - cloudReduction) % 100;
+        fuel = Mathf.Min(fuel - cloudReduction, 100);
     }
 
     public void FuelCollection(float increment) {
-        fuel = (fuel + increment) % 100;
+        fuel = Mathf.Min(fuel + increment, 100);
     }
 }
