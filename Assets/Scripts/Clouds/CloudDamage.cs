@@ -23,9 +23,9 @@ public class CloudDamage : MonoBehaviour
                 // fuelCapacity.ReductionCloud(20f);
                 fuelCapacity.ReductionCloud(10f);
                 Debug.Log("After Reduction: " + fuelCapacity.fuel.ToString());
+
+                hasEntered = true;
             }
-            
-            hasEntered = true;
         }
     }
     // private void OnTriggerExit(Collider collider)
