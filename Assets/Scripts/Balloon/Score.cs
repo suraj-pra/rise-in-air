@@ -21,4 +21,8 @@ public class Score : MonoBehaviour
     public int getScore() {
         return (int)score;
     }
+
+    void OnDisable(){
+        PlayerPrefs.SetInt("score", (int)score);
+    }
 }
