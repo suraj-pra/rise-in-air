@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class FuelCapacity : MonoBehaviour
 {
@@ -17,22 +18,22 @@ public class FuelCapacity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        fuel -= (Time.deltaTime * reductionRatio) % 100;
+        fuel= Math.Min(fuel - Time.deltaTime * reductionRatio, 100);
         if(fuel <= 0){
-            terminate();
+            GameObject.Find("Variables").GetComponent<Variables>().EndScene();
         }
     }
 
-    void terminate(){
-        //to traverse to next scene;
-        Application.Quit();
-    }
 
     public void ReductionCloud(float cloudReduction) {
-        fuel = Mathf.Min(fuel - cloudReduction, 100);
+        fuel = Math.Min(fuel - cloudReduction, 100);
     }
 
     public void FuelCollection(float increment) {
-        fuel = Mathf.Min(fuel + increment, 100);
+        fuel = Math.Min(fuel + increment, 100);
+    }
+
+    public void ReductionDrop(){
+        fuel = Math.Min(fuel - 1f, 100);
     }
 }
