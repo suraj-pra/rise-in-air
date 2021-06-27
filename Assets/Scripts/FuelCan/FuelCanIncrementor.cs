@@ -15,8 +15,8 @@ public class FuelCanIncrementor : MonoBehaviour
         if (collider.gameObject.name == "Air_Balloon")
         {
             Debug.Log("Before Increment: " + fuelCapacity.fuel.ToString());
-            fuelCapacity.FuelCollection(20f);
-            // fuelCapacity.FuelCollection(10f);
+            fuelCapacity.FuelCollection(30f);
+            // fuelCapacity.FuelCollection(20f);
             Debug.Log("After Increment: " + fuelCapacity.fuel.ToString());
             Destroy(this.gameObject);
         }
