@@ -644,7 +644,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &812830735
 GameObject:
@@ -1211,7 +1211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1880198087072625984, guid: f7ebb745fff249342a27e028e15d6562, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1880198087072625984, guid: f7ebb745fff249342a27e028e15d6562, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2053,6 +2053,10 @@ PrefabInstance:
     - target: {fileID: 6087437158880767250, guid: f67f8e959f10a904db3a1854ad56aa49, type: 3}
       propertyPath: m_Name
       value: Air_Balloon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087437158880767250, guid: f67f8e959f10a904db3a1854ad56aa49, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f67f8e959f10a904db3a1854ad56aa49, type: 3}
