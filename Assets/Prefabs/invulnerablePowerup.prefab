@@ -5105,7 +5105,7 @@ GameObject:
   - component: {fileID: 2366891418505129381}
   - component: {fileID: 6180452816325169259}
   - component: {fileID: 1223375017054419975}
-  - component: {fileID: -8452063822675990116}
+  - component: {fileID: 278446655351881905}
   m_Layer: 0
   m_Name: invulnerablePowerup
   m_TagString: Untagged
@@ -5169,7 +5169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd2c7f2d89024d43ae2c4f9a72e145b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-8452063822675990116
+--- !u!114 &278446655351881905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
