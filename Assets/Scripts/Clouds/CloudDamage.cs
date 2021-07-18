@@ -19,10 +19,10 @@ public class CloudDamage : MonoBehaviour
         {
             if (collider.gameObject.name == "Air_Balloon")
             {
-                Debug.Log("Before Reduction: " + fuelCapacity.fuel.ToString());
+                // Debug.Log("Before Reduction: " + fuelCapacity.fuel.ToString());
                 // fuelCapacity.ReductionCloud(20f);
                 fuelCapacity.ReductionCloud(10f);
-                Debug.Log("After Reduction: " + fuelCapacity.fuel.ToString());
+                // Debug.Log("After Reduction: " + fuelCapacity.fuel.ToString());
             }
             
             hasEntered = true;

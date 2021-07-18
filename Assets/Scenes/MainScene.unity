@@ -656,7 +656,6 @@ GameObject:
   m_Component:
   - component: {fileID: 812830736}
   - component: {fileID: 812830738}
-  - component: {fileID: 812830737}
   - component: {fileID: 812830739}
   m_Layer: 5
   m_Name: Fuel bar
@@ -687,21 +686,6 @@ RectTransform:
   m_AnchoredPosition: {x: -99, y: -35}
   m_SizeDelta: {x: 135.90259, y: 20.87741}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &812830737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812830735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c98bea576ad8249953e9a0ff552f5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuel: 0
-  max_fuel: 100
-  reductionRatio: 0
 --- !u!114 &812830738
 MonoBehaviour:
   m_ObjectHideFlags: 0
