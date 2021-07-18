@@ -17,14 +17,14 @@ public class FuelBar : MonoBehaviour
         fuelCapacity = player.GetComponent<FuelCapacity>();
 
         slider.maxValue = fuelCapacity.max_fuel;
-        slider.value = fuelCapacity.fuel;
+        slider.value = fuelCapacity.GetFuel();
 
         fill.color = gradient.Evaluate(1f);
     }
 
     void Update()
     {
-        slider.value = fuelCapacity.fuel;
+        slider.value = fuelCapacity.GetFuel();
 
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }
