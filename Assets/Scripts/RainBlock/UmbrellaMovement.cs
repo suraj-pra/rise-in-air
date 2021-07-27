@@ -10,13 +10,11 @@ public class UmbrellaMovement : MonoBehaviour
     int waypointIndex;
     float dist;
 
-    // Start is called before the first frame update
     void Start()
     {
         waypointIndex = 0;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         dist = Vector3.Distance(transform.position, waypoints[waypointIndex].position);
