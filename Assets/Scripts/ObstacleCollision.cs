@@ -20,11 +20,4 @@ public class ObstacleCollision : MonoBehaviour
             fuelCapacity.ReductionDrop();
         }
     }
-
-    // void OnTriggerEnter(Collider collider) {
-    //     if(collider.gameObject.tag == "Obstacle") {
-    //         Debug.Log("Game Over");
-    //         Application.Quit();
-    //     }
-    // }
 }
