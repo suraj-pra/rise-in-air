@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Variables : MonoBehaviour
 {
-    float speed = 8f;
+    public float speed = 8f;
 
     public float getSpeed() {
         return speed;
@@ -12,5 +12,9 @@ public class Variables : MonoBehaviour
 
     public void EndScene(){
         SceneManager.LoadScene("EndMenu");
+    }
+
+    public void increaseSpeed(){
+        speed += 1f;
     }
 }
