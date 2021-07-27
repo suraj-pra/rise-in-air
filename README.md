@@ -9,16 +9,13 @@ Alok Thakur\
 Suraj Prakash\
 \
 Design Document For the Project Rise IN AIR: https://docs.google.com/document/d/1x0vBrOvFx-EC4_0_eftJY-6XEXyMlxrGuj-_BVMSkyA/edit?usp=sharing \
-(same for all team members)\
 \
 Build For the Project Rise IN Air: https://drive.google.com/drive/folders/1ROL6U_2j4e7yRndnJ-Re1KDbGpzN7ycz?usp=sharing \
-(same for all team members)\
 \
 GamePlay Video explaining details: \
-(same for all team members)\
 \
-Week 1 Submission Project:  https://github.com/divigarg/evaluation-1 \
+Week 1 Submission Project:  https://github.com/suraj-pra/evaluation-1.git \
 \
-Week 1 Submission Project Video: https://drive.google.com/file/d/1t_AkJb7c3Ra0IO2s4NdDJkU7n5hMCSDl/view?usp=sharing \
+Week 1 Submission Project Video: https://drive.google.com/file/d/1CxA3EfYW929VIX5KOYqQpUEui9omi8H8/view?usp=sharing \
 \
-My (Divyansh Garg) Contribution to the Game: https://docs.google.com/document/d/16vacu2hwIvGzUFokkTWaBuWT8vWsggcLbsqbvtNln38/edit
+My (Suraj Prakash) Contribution to the Game: https://docs.google.com/document/d/16vacu2hwIvGzUFokkTWaBuWT8vWsggcLbsqbvtNln38/edit
