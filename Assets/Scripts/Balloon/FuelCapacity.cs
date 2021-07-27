@@ -19,9 +19,9 @@ public class FuelCapacity : MonoBehaviour
     void Update()
     {
         fuel= Math.Min(fuel - Time.deltaTime * reductionRatio, 100);
-        Debug.Log("Fuel: " + fuel.ToString());
+        // Debug.Log("Fuel: " + fuel.ToString());
         if(fuel <= 0){
-            Debug.Log("Fuel Empty of " + gameObject.name + ": " + fuel.ToString());
+            // Debug.Log("Fuel Empty of " + gameObject.name + ": " + fuel.ToString());
             GameObject.Find("Variables").GetComponent<Variables>().EndScene();
         }
     }
@@ -39,6 +39,6 @@ public class FuelCapacity : MonoBehaviour
     }
 
     public void ReductionDrop(){
-        fuel = Math.Min(fuel - 1f, 100);
+        fuel = Math.Min(fuel - 0.5f, 100);
     }
 }

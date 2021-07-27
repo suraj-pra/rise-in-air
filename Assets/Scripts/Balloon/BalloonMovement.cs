@@ -14,30 +14,30 @@ public class BalloonMovement : MonoBehaviour
     void FixedUpdate()
     {
         if(Input.GetKey(KeyCode.Escape)){
-            Debug.Log("Endscene Move");
+            // Debug.Log("Endscene Move");
             variables.EndScene();
         }
 
         if(transform.position.x < 6.4 && transform.position.x > -6.4){
             if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
                 transform.Translate(movementRatio * Vector3.left * Time.deltaTime);
-                Debug.Log("left");
+                // Debug.Log("left");
             }
             if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
                 transform.Translate(movementRatio * Vector3.right * Time.deltaTime);
-                Debug.Log("right");
+                // Debug.Log("right");
             }
         }
         else if(transform.position.x >= 6.4) {
             if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
                 transform.Translate(movementRatio * Vector3.left * Time.deltaTime);
-                Debug.Log("left");
+                // Debug.Log("left");
             }
         }
         else {
             if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
                 transform.Translate(movementRatio * Vector3.right * Time.deltaTime);
-                Debug.Log("right");
+                // Debug.Log("right");
             }
         }
     }
