@@ -12,7 +12,7 @@ Design Document For the Project Rise IN AIR: https://docs.google.com/document/d/
 \
 Build For the Project Rise IN Air: https://drive.google.com/drive/folders/1ROL6U_2j4e7yRndnJ-Re1KDbGpzN7ycz?usp=sharing \
 \
-GamePlay Video explaining details: \
+GamePlay Video explaining details: https://drive.google.com/file/d/1tQdY2clsGnPgCk5AOia7bB9R7NFIJqFw/view?usp=sharing \
 \
 Week 1 Submission Project:  https://github.com/suraj-pra/evaluation-1.git \
 \
